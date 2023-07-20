@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Homepage for planning the webpage of the Chamber of Commerce of the Bridger Valley" >
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <title>Bountiful Foods - Home</title>
+</head>
+<body>
+    <header>
+        <div id="social">
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/linked.png" alt="LinkedIn"></a>
+        </div>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <nav>
+            <button id="hamburgerBtn"><span>+</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul></nav>
+    </header>
+    <main id="fresh">
+        <h2>Make Your Own Creation</h2>
+        <form method="get" action="#" target="_self">
+            <label>First Name* </label><input type="text" id="name" name="fname" required>
+            <label>E-mail* </label><input type="email" id="email" name="email" placeholder="example@site.com" required>
+            <label>Cell Phone Number* </label><input type="tel" id="tel" name="phone" required>
+            <fieldset>
+                <legend>Fruit Choices</legend>
+                <label>Choice 1 </label><select id="fruits1" name="choice1"><option value="">--Please choose an option--</option></select>
+                <label>Choice 2 </label><select id="fruits2" name="choice2"><option value="">--Please choose an option--</option></select>
+                <label>Choice 3 </label><select id="fruits3" name="choice3"><option value="">--Please choose an option--</option></select>
+            </fieldset>
+            <label class="describe">Special Instructions</label><textarea id="text" rows="4"></textarea>
+            <label class="formDate"></label><input type="hidden" id="date" name="date">
+            <input class="btn" type="submit" value="Make">
+        </form>
+        <div id="readout">
+
+        </div>
+    </main>
+    <footer>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <div id="contact">
+            <p>Bountiful Foods</p>
+            <p>123 Newberry Road</p>
+            <p>Carlsbad, California</p>
+            <p>(555) 555-5555</p>
+        </div>
+        <a href="resource.html">Link to the Attributes page</a>
+        <div id="last">3</div>
+    </footer>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/lastModified.js"></script>
+    <script src="scripts/fruits.js"></script>
+</body>
+</html>
